@@ -1,0 +1,20 @@
+{
+    "name": "fastify-ec2-ci",
+    "version": "1.0.0",
+    "description": "Fastify server with CI/CD deployment",
+    "main": "server.js",
+    "author": {
+        "name": "Alfredo López Moltó"
+    },
+    "scripts": {
+        "start": "node server.js",
+        "test": "jest"
+    },
+    "dependencies": {
+        "fastify": "^4.0.0"
+    },
+    "devDependencies": {
+        "jest": "^29.0.0",
+        "supertest": "^6.0.0"
+    }
+}
