@@ -18,11 +18,11 @@ jobs:
           mkdir -p ~/.ssh
           echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_ed25519
           chmod 600 ~/.ssh/id_ed25519
-          ssh-keyscan -H 184.73.20.153 >> ~/.ssh/known_hosts
+          ssh-keyscan -H 54.175.6.249 >> ~/.ssh/known_hosts
 
       - name: Deploy via SSH
         run: |
-          ssh ubuntu@184.73.20.153 << 'EOF'
+          ssh ubuntu@54.175.6.249 << 'EOF'
             cd ies-pere-maria
             sh deploy.sh
           EOF
